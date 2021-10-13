@@ -18,10 +18,10 @@ const people = [
 	{ name: 'Bob Ziroll', age: 100 },
 ];
 
-const makeStrings = people.map((person) =>
-	person.age > 18
-		? `${person.name} can go to The Matrix`
-		: `${person.name} is under age!!`
-);
-
-console.log(makeStrings);
+const makeStrings = (arr) =>
+	arr.map((person) =>
+		person.age > 18
+			? `${person.name} can go to The Matrix`
+			: `${person.name} is under age!!`
+	);
+console.log(makeStrings(people));
